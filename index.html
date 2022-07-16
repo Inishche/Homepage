@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en" class="ht">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Ukrainian castles</title>
+        <script>
+
+          document.addEventListener('DOMContentLoaded', function()
+          {
+          let yes = document.querySelector('#yes');
+          yes.addEventListener('click', function()
+          {
+              document.querySelector('#answ').innerHTML = 'Thanks ;)!';
+              });
+          let no = document.querySelectorAll('#no');
+                for (let i = 0; i < no.length; i++)
+                {
+                no[i].addEventListener('click', function()
+                {
+                  document.querySelector('#answ').innerHTML = 'Try once more!!';
+            });
+            }
+          });
+        </script>
+    </head>
+    <body class="f_body">
+        <div class = "name">
+            <h1>Castles of Ukraine</h1>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Menu
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul class="menu">
+                    <li><a href="https://inishche-code50-104261960-7v4x6ww46fwr4-8080.githubpreview.dev/Castle_one.html">Khotyn</a></li>
+                    <li><a href="https://inishche-code50-104261960-7v4x6ww46fwr4-8080.githubpreview.dev/Castle_one.html">Kamianets-Podilskyi</a></li>
+                    <li><a href="https://inishche-code50-104261960-7v4x6ww46fwr4-8080.githubpreview.dev/Castle_one.html">Medzhybizh</a></li>
+                    <li><a href="https://inishche-code50-104261960-7v4x6ww46fwr4-8080.githubpreview.dev/Castle_one.html">Zbarazh</a></li>
+                </div>
+              </div>
+            </div>
+        </div>
+            <p><a href="https://inishche-code50-104261960-7v4x6ww46fwr4-8080.githubpreview.dev/Castle_one.html"><img alt="Castle" src="Khotyn.jpeg" width= "450" height= "450" class="ph" alt=""></a>
+
+            <a href="https://inishche-code50-104261960-7v4x6ww46fwr4-8080.githubpreview.dev/Castle_two.html"><img alt="Castle" src="Kam.jpeg" width= "450" height= "450" class="ph" align ="right"></a></p>
+            <p><a href="https://inishche-code50-104261960-7v4x6ww46fwr4-8080.githubpreview.dev/Castle_three.html"><img alt="Castle" src="Medz.jpeg" width= "450" height= "450" class="ph" alt=""></a>
+            <a href="https://inishche-code50-104261960-7v4x6ww46fwr4-8080.githubpreview.dev/Castle_four.html"><img alt="Castle" src="Zb_1.jpeg" width= "450" height= "450" class="ph" align ="right"></a></p>
+
+            <div class="quest">
+              <div class="q">
+                  <hr>
+                  <h3 class="like">Do you like my site?</h3>
+                  <button id='yes'>Yes!</button>
+                  <button id='no'>No :(</button>
+                  <p id="answ"></p>
+                  <p id="answer"></p>
+
+              </div>
+          </body>
+</html>
